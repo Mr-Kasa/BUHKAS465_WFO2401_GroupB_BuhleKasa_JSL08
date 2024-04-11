@@ -5,7 +5,8 @@ let bankBranchInstance = null;
 // 2. Define a class called `BankBranch` for managing branch information.
 class BankBranch {constructor(branchInfo){
     if(bankBranchInstance===null){
-        bankBranchInstance=branchInfo
+        this.branchInfo=branchInfo
+        bankBranchInstance=this
 
     }
     return bankBranchInstance
@@ -18,6 +19,8 @@ const branchA = new BankBranch("Jozi Atm")
 console.log(branchA.getBranchInfo())
 const branchB = new BankBranch("Cpt Atm")
 console.log(branchB.getBranchInfo())
+
+console.log(branchA===branchB)
 // 3. In the `BankBranch` class:
 //    - Create a constructor that takes `branchInfo` as a parameter.
 //    - Inside the constructor, check if the `bankBranchInstance` variable is null (indicating no instance exists).
