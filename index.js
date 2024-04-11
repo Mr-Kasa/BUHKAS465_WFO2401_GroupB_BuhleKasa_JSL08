@@ -14,6 +14,10 @@ getBranchInfo(){
     return this.branchInfo
 }
 }
+const branchA = new BankBranch("Jozi Atm")
+console.log(branchA.getBranchInfo())
+const branchB = new BankBranch("Cpt Atm")
+console.log(branchB.getBranchInfo())
 // 3. In the `BankBranch` class:
 //    - Create a constructor that takes `branchInfo` as a parameter.
 //    - Inside the constructor, check if the `bankBranchInstance` variable is null (indicating no instance exists).
