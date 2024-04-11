@@ -10,7 +10,9 @@ class BankBranch {constructor(branchInfo){
     }
     return bankBranchInstance
 }
-
+getBranchInfo(){
+    return this.branchInfo
+}
 }
 // 3. In the `BankBranch` class:
 //    - Create a constructor that takes `branchInfo` as a parameter.
